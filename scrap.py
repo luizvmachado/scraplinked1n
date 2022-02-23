@@ -13,8 +13,8 @@ if __name__ == '__main__':
             r.click()
             time.sleep(4)
             try:
-                descricao = driver.find_elements(By.CLASS_NAME, 'description')
-                lista_descricoes.append(descricao[0].text)
+                descricao = driver.find_element(By.CLASS_NAME, 'description')
+                lista_descricoes.append(descricao.text)
             except:
                 print('Erro')
                 pass
