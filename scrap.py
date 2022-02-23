@@ -22,6 +22,6 @@ if __name__ == '__main__':
         if len(lista_descricoes) == len(resultados):
             break
     descricao_salvar = '\n'.join(lista_descricoes)
-    with open('descricoes_vagas.txt','w') as f:
+    with open('descricoes_vagas.txt','w',encoding='utf-8') as f:
         f.write(descricao_salvar)
     driver.quit()
